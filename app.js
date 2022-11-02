@@ -17,8 +17,8 @@ function promoCode() {
     const promoButton = document.getElementById('promo-btn');
     if (promoField.value == 'stevekaku') {
         payableAmount = payableAmount - (payableAmount * (20 / 100));
-        promoField.value = '';
     }
+    promoField.value = '';
     return payableAmount;
 }
 
